@@ -1,0 +1,10 @@
+/.idea/
+/.tmp/
+/conf/
+/coverage/
+/dist/
+/gulp_tasks/
+/node_modules/
+/src/assets/
+/src/lib/
+/src/libs/

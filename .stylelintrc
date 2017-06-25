@@ -1,0 +1,37 @@
+{
+  "extends": [
+    "stylelint-config-standard"
+  ],
+  "plugins": [
+    "stylelint-order"
+  ],
+  "rules": {
+    "indentation": 4,
+    "at-rule-empty-line-before": [ "always", {
+      "except": [
+        "after-same-name",
+        "blockless-after-same-name-blockless",
+        "blockless-after-blockless",
+        "first-nested"
+      ],
+      "ignore": ["after-comment", "inside-block"],
+      "severity": "warning"
+    }],
+    "comment-empty-line-before": ["always", {
+      "except": ["first-nested"],
+      "ignore": ["stylelint-commands", "after-comment"],
+      "severity": "warning"
+    }],
+    "max-empty-lines": 2,
+    "number-leading-zero": "always",
+    "shorthand-property-no-redundant-values": null,
+    "unit-whitelist": ["px", "em", "rem", "%", "s", "vw", "vh"],
+    "order/order":  [
+      "custom-properties",
+      "dollar-variables",
+      "declarations",
+      "rules"
+    ],
+    "order/properties-order": null
+  }
+}
